@@ -249,7 +249,7 @@ NSString* const kUrl = @"http://devimages.apple.com/iphone/samples/bipbop/bipbop
     _progressSlider.maximumTrackTintColor = [UIColor blackColor];
     _progressSlider.middleTrackTintColor  = [UIColor whiteColor];
     [_progressSlider setThumbImage:[UIImage imageNamed:@"player-progress-point"] forState:UIControlStateNormal];
-    
+
     //UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureAction:)];
     //panGesture.delegate = self;
     //[_movieBackView addGestureRecognizer:panGesture];

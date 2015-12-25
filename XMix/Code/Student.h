@@ -11,10 +11,13 @@
 
 @interface Student : Person<NSCoding,NSCopying>
 {
-    NSInteger _studentNumber;
+    NSInteger studentNumber;
 }
-@property (nonatomic, copy) NSString *_className;
+@property (nonatomic, copy) NSString *className;
 @property (nonatomic) NSInteger classNumber;
 @property (nonatomic) BOOL niceClass;
+
+
+-(void)testMethod;
 
 @end

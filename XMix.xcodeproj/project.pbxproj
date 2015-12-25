@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774907D41C1A9C8E0024F304 /* WKWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774907D31C1A9C8E0024F304 /* WKWebviewController.m */; };
+		774907DC1C1AB27C0024F304 /* TLMKWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = 774907DB1C1AB27C0024F304 /* TLMKWebview.m */; };
 		776822AD1BD5D66D00654080 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776822AC1BD5D66D00654080 /* MainTabbarController.m */; };
 		776822B81BD5E59700654080 /* LocationMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776822B71BD5E59700654080 /* LocationMainController.m */; };
 		776822BC1BD5EA9300654080 /* OthersMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776822BB1BD5EA9300654080 /* OthersMainController.m */; };
+		776B84631C243F90003B5958 /* PeriscopeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B84621C243F90003B5958 /* PeriscopeViewController.m */; };
 		776FCB1C1BE9D59900319861 /* TopBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776FCB1B1BE9D59900319861 /* TopBannerView.xib */; };
 		776FCB1F1BE9D7F800319861 /* TopBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FCB1E1BE9D7F800319861 /* TopBannerView.m */; };
 		77703F881BF09C9D00DAF79B /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 77703F871BF09C9D00DAF79B /* UINavigationBar+Awesome.m */; };
@@ -28,6 +31,10 @@
 		77880CC11BCBA3BB00824296 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77880CBE1BCBA3BB00824296 /* FBSDKCoreKit.framework */; };
 		77880CC21BCBA3BB00824296 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77880CBF1BCBA3BB00824296 /* FBSDKLoginKit.framework */; };
 		77880CC51BCBADEA00824296 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77880CC41BCBADEA00824296 /* FBSDKShareKit.framework */; };
+		77959AA61C217D2A00B5DC03 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77959AA51C217D2A00B5DC03 /* NotificationCenter.framework */; };
+		77959AAA1C217D2A00B5DC03 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77959AA91C217D2A00B5DC03 /* TodayViewController.m */; };
+		77959AAD1C217D2A00B5DC03 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77959AAB1C217D2A00B5DC03 /* MainInterface.storyboard */; };
+		77959AB11C217D2A00B5DC03 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77959AA31C217D2A00B5DC03 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		77968B5C1BCE291800AA29C2 /* OauthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77968B5B1BCE291800AA29C2 /* OauthViewController.m */; };
 		779732721B66375C009C59D7 /* player-progress-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779732711B66375C009C59D7 /* player-progress-point@2x.png */; };
 		77AA225F1BABFEEA0036C68A /* BackBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77AA225E1BABFEEA0036C68A /* BackBundle.bundle */; };
@@ -55,12 +62,20 @@
 		77BADECB1BD5F5FE002B9DD5 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BADEC91BD5F5FE002B9DD5 /* CollectionCell.m */; };
 		77BADECC1BD5F5FE002B9DD5 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BADECA1BD5F5FE002B9DD5 /* CollectionCell.xib */; };
 		77BADECF1BD5F9C8002B9DD5 /* MainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BADECE1BD5F9C8002B9DD5 /* MainCollectionViewController.m */; };
+		77BBD20A1C2CE6E1009ABADD /* Fox.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BBD2091C2CE6E1009ABADD /* Fox.m */; };
 		77D81B6C1C19565D00DAA06D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D81B6B1C19565D00DAA06D /* Person.m */; };
 		77D81B6F1C195CF000DAA06D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D81B6E1C195CF000DAA06D /* Student.m */; };
-		77D81B781C198B3300DAA06D /* TLObjectCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D81B771C198B3300DAA06D /* TLObjectCopy.m */; };
+		F377B9CF4E41C2B7E4BD6C25 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AF82944B911E50EBA3B741 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		77959AAF1C217D2A00B5DC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B2592B1B40EFA300CBE874 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77959AA21C217D2A00B5DC03;
+			remoteInfo = TodayExtension;
+		};
 		77B259501B40EFA300CBE874 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77B2592B1B40EFA300CBE874 /* Project object */;
@@ -71,6 +86,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		77959AB51C217D2A00B5DC03 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77959AB11C217D2A00B5DC03 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77AA23801BAC195E0036C68A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,12 +110,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		774907D21C1A9C8E0024F304 /* WKWebviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKWebviewController.h; path = Code/WKWebviewController.h; sourceTree = "<group>"; };
+		774907D31C1A9C8E0024F304 /* WKWebviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKWebviewController.m; path = Code/WKWebviewController.m; sourceTree = "<group>"; };
+		774907DA1C1AB27C0024F304 /* TLMKWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLMKWebview.h; path = Code/TLMKWebview.h; sourceTree = "<group>"; };
+		774907DB1C1AB27C0024F304 /* TLMKWebview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLMKWebview.m; path = Code/TLMKWebview.m; sourceTree = "<group>"; };
 		776822AB1BD5D66D00654080 /* MainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabbarController.h; path = Code/MainTabbarController.h; sourceTree = "<group>"; };
 		776822AC1BD5D66D00654080 /* MainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabbarController.m; path = Code/MainTabbarController.m; sourceTree = "<group>"; };
 		776822B61BD5E59700654080 /* LocationMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainController.h; path = Code/LocationMainController.h; sourceTree = "<group>"; };
 		776822B71BD5E59700654080 /* LocationMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainController.m; path = Code/LocationMainController.m; sourceTree = "<group>"; };
 		776822BA1BD5EA9300654080 /* OthersMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OthersMainController.h; path = Code/OthersMainController.h; sourceTree = "<group>"; };
 		776822BB1BD5EA9300654080 /* OthersMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OthersMainController.m; path = Code/OthersMainController.m; sourceTree = "<group>"; };
+		776B84611C243F90003B5958 /* PeriscopeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeriscopeViewController.h; path = Code/PeriscopeViewController.h; sourceTree = "<group>"; };
+		776B84621C243F90003B5958 /* PeriscopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeriscopeViewController.m; path = Code/PeriscopeViewController.m; sourceTree = "<group>"; };
 		776FCB1B1BE9D59900319861 /* TopBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopBannerView.xib; path = Code/TopBannerView.xib; sourceTree = "<group>"; };
 		776FCB1D1BE9D7F800319861 /* TopBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopBannerView.h; path = Code/TopBannerView.h; sourceTree = "<group>"; };
 		776FCB1E1BE9D7F800319861 /* TopBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopBannerView.m; path = Code/TopBannerView.m; sourceTree = "<group>"; };
@@ -121,6 +153,12 @@
 		77880CBE1BCBA3BB00824296 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		77880CBF1BCBA3BB00824296 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		77880CC41BCBADEA00824296 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		77959AA31C217D2A00B5DC03 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77959AA51C217D2A00B5DC03 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		77959AA81C217D2A00B5DC03 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		77959AA91C217D2A00B5DC03 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		77959AAC1C217D2A00B5DC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		77959AAE1C217D2A00B5DC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77968B5A1BCE291800AA29C2 /* OauthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OauthViewController.h; path = Code/OauthViewController.h; sourceTree = "<group>"; };
 		77968B5B1BCE291800AA29C2 /* OauthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OauthViewController.m; path = Code/OauthViewController.m; sourceTree = "<group>"; };
 		779732711B66375C009C59D7 /* player-progress-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress-point@2x.png"; sourceTree = "<group>"; };
@@ -171,16 +209,27 @@
 		77BADECA1BD5F5FE002B9DD5 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionCell.xib; path = Code/CollectionCell.xib; sourceTree = "<group>"; };
 		77BADECD1BD5F9C8002B9DD5 /* MainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainCollectionViewController.h; path = Code/MainCollectionViewController.h; sourceTree = "<group>"; };
 		77BADECE1BD5F9C8002B9DD5 /* MainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainCollectionViewController.m; path = Code/MainCollectionViewController.m; sourceTree = "<group>"; };
+		77BBD2081C2CE6E1009ABADD /* Fox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fox.h; path = Code/Fox.h; sourceTree = "<group>"; };
+		77BBD2091C2CE6E1009ABADD /* Fox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fox.m; path = Code/Fox.m; sourceTree = "<group>"; };
 		77D81B6A1C19565D00DAA06D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Code/Person.h; sourceTree = "<group>"; };
 		77D81B6B1C19565D00DAA06D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Code/Person.m; sourceTree = "<group>"; };
 		77D81B6D1C195CF000DAA06D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = Code/Student.h; sourceTree = "<group>"; };
 		77D81B6E1C195CF000DAA06D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = Code/Student.m; sourceTree = "<group>"; };
 		77D81B701C197DB100DAA06D /* TLObjectEncoderDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TLObjectEncoderDecoder.h; path = Code/TLObjectEncoderDecoder.h; sourceTree = "<group>"; };
-		77D81B761C198B3300DAA06D /* TLObjectCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLObjectCopy.h; path = Code/TLObjectCopy.h; sourceTree = "<group>"; };
-		77D81B771C198B3300DAA06D /* TLObjectCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLObjectCopy.m; path = Code/TLObjectCopy.m; sourceTree = "<group>"; };
+		D1AF82944B911E50EBA3B741 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D9BCB4D3978CF0C0A5D07 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC5AF848AB1E94A77F2D50D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77959AA01C217D2A00B5DC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77959AA61C217D2A00B5DC03 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B259301B40EFA300CBE874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +237,7 @@
 				77880CC21BCBA3BB00824296 /* FBSDKLoginKit.framework in Frameworks */,
 				77880CC11BCBA3BB00824296 /* FBSDKCoreKit.framework in Frameworks */,
 				77880CC51BCBADEA00824296 /* FBSDKShareKit.framework in Frameworks */,
+				F377B9CF4E41C2B7E4BD6C25 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +251,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774907D51C1A9CA30024F304 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				77D81B6A1C19565D00DAA06D /* Person.h */,
+				77D81B6B1C19565D00DAA06D /* Person.m */,
+				77D81B6D1C195CF000DAA06D /* Student.h */,
+				77D81B6E1C195CF000DAA06D /* Student.m */,
+				77D81B701C197DB100DAA06D /* TLObjectEncoderDecoder.h */,
+				77BBD2081C2CE6E1009ABADD /* Fox.h */,
+				77BBD2091C2CE6E1009ABADD /* Fox.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		774907D61C1A9D370024F304 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				774907DA1C1AB27C0024F304 /* TLMKWebview.h */,
+				774907DB1C1AB27C0024F304 /* TLMKWebview.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		776822B41BD5E54F00654080 /* Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +299,8 @@
 		776822B91BD5E78500654080 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				774907D61C1A9D370024F304 /* Views */,
+				774907D51C1A9CA30024F304 /* Entity */,
 				776822AB1BD5D66D00654080 /* MainTabbarController.h */,
 				776822AC1BD5D66D00654080 /* MainTabbarController.m */,
 				77880CB21BCBA32800824296 /* ViewController.h */,
@@ -234,13 +309,10 @@
 				77968B5E1BCE2BB500AA29C2 /* GCD */,
 				77968B5D1BCE2B9B00AA29C2 /* Movie */,
 				77968B5F1BCE2BCC00AA29C2 /* Oauth */,
-				77D81B6A1C19565D00DAA06D /* Person.h */,
-				77D81B6B1C19565D00DAA06D /* Person.m */,
-				77D81B6D1C195CF000DAA06D /* Student.h */,
-				77D81B6E1C195CF000DAA06D /* Student.m */,
-				77D81B701C197DB100DAA06D /* TLObjectEncoderDecoder.h */,
-				77D81B761C198B3300DAA06D /* TLObjectCopy.h */,
-				77D81B771C198B3300DAA06D /* TLObjectCopy.m */,
+				774907D21C1A9C8E0024F304 /* WKWebviewController.h */,
+				774907D31C1A9C8E0024F304 /* WKWebviewController.m */,
+				776B84611C243F90003B5958 /* PeriscopeViewController.h */,
+				776B84621C243F90003B5958 /* PeriscopeViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -297,6 +369,26 @@
 				77880CBF1BCBA3BB00824296 /* FBSDKLoginKit.framework */,
 			);
 			path = Facebook;
+			sourceTree = "<group>";
+		};
+		77959AA41C217D2A00B5DC03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77959AA51C217D2A00B5DC03 /* NotificationCenter.framework */,
+				D1AF82944B911E50EBA3B741 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77959AA71C217D2A00B5DC03 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				77959AA81C217D2A00B5DC03 /* TodayViewController.h */,
+				77959AA91C217D2A00B5DC03 /* TodayViewController.m */,
+				77959AAB1C217D2A00B5DC03 /* MainInterface.storyboard */,
+				77959AAE1C217D2A00B5DC03 /* Info.plist */,
+			);
+			path = TodayExtension;
 			sourceTree = "<group>";
 		};
 		77968B5D1BCE2B9B00AA29C2 /* Movie */ = {
@@ -382,7 +474,10 @@
 			children = (
 				77B259351B40EFA300CBE874 /* XMix */,
 				77B259521B40EFA300CBE874 /* XMixTests */,
+				77959AA71C217D2A00B5DC03 /* TodayExtension */,
+				77959AA41C217D2A00B5DC03 /* Frameworks */,
 				77B259341B40EFA300CBE874 /* Products */,
+				E35412AEBAE6496027F767EE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -391,6 +486,7 @@
 			children = (
 				77B259331B40EFA300CBE874 /* XMix.app */,
 				77B2594F1B40EFA300CBE874 /* XMixTests.xctest */,
+				77959AA31C217D2A00B5DC03 /* TodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -510,21 +606,52 @@
 			name = CollectionView;
 			sourceTree = "<group>";
 		};
+		E35412AEBAE6496027F767EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E97D9BCB4D3978CF0C0A5D07 /* Pods.debug.xcconfig */,
+				FBC5AF848AB1E94A77F2D50D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77B259321B40EFA300CBE874 /* XMix */ = {
+		77959AA21C217D2A00B5DC03 /* TodayExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77B259591B40EFA300CBE874 /* Build configuration list for PBXNativeTarget "XMix" */;
+			buildConfigurationList = 77959AB41C217D2A00B5DC03 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
 			buildPhases = (
-				77B2592F1B40EFA300CBE874 /* Sources */,
-				77B259301B40EFA300CBE874 /* Frameworks */,
-				77B259311B40EFA300CBE874 /* Resources */,
-				77AA23801BAC195E0036C68A /* Embed Frameworks */,
+				77959A9F1C217D2A00B5DC03 /* Sources */,
+				77959AA01C217D2A00B5DC03 /* Frameworks */,
+				77959AA11C217D2A00B5DC03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 77959AA31C217D2A00B5DC03 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		77B259321B40EFA300CBE874 /* XMix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B259591B40EFA300CBE874 /* Build configuration list for PBXNativeTarget "XMix" */;
+			buildPhases = (
+				1DF04BDB80688102EB42EC9C /* Check Pods Manifest.lock */,
+				77B2592F1B40EFA300CBE874 /* Sources */,
+				77B259301B40EFA300CBE874 /* Frameworks */,
+				77B259311B40EFA300CBE874 /* Resources */,
+				77AA23801BAC195E0036C68A /* Embed Frameworks */,
+				77959AB51C217D2A00B5DC03 /* Embed App Extensions */,
+				1E78BD80C282B336E58CAAF3 /* Embed Pods Frameworks */,
+				B411EF27FE6A3E90794F0F34 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77959AB01C217D2A00B5DC03 /* PBXTargetDependency */,
 			);
 			name = XMix;
 			productName = XMix;
@@ -558,6 +685,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = X;
 				TargetAttributes = {
+					77959AA21C217D2A00B5DC03 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					77B259321B40EFA300CBE874 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -582,11 +712,20 @@
 			targets = (
 				77B259321B40EFA300CBE874 /* XMix */,
 				77B2594E1B40EFA300CBE874 /* XMixTests */,
+				77959AA21C217D2A00B5DC03 /* TodayExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77959AA11C217D2A00B5DC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77959AAD1C217D2A00B5DC03 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B259311B40EFA300CBE874 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,7 +754,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DF04BDB80688102EB42EC9C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E78BD80C282B336E58CAAF3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B411EF27FE6A3E90794F0F34 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		77959A9F1C217D2A00B5DC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77959AAA1C217D2A00B5DC03 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B2592F1B40EFA300CBE874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -623,6 +818,7 @@
 				77880CA91BCBA2C000824296 /* MapTipView.m in Sources */,
 				77ACF8AF1BB2C0070025FF3F /* TLVerResultEntity.m in Sources */,
 				77880CAF1BCBA31100824296 /* VideoSlider.m in Sources */,
+				774907D41C1A9C8E0024F304 /* WKWebviewController.m in Sources */,
 				77BADECB1BD5F5FE002B9DD5 /* CollectionCell.m in Sources */,
 				77ACF8AE1BB2C0070025FF3F /* TLVerRequestEntity.m in Sources */,
 				77B259391B40EFA300CBE874 /* main.m in Sources */,
@@ -634,16 +830,17 @@
 				77B259701B40F29000CBE874 /* CLLRefreshHeadController.m in Sources */,
 				77968B5C1BCE291800AA29C2 /* OauthViewController.m in Sources */,
 				77BADECF1BD5F9C8002B9DD5 /* MainCollectionViewController.m in Sources */,
-				77D81B781C198B3300DAA06D /* TLObjectCopy.m in Sources */,
 				77734A261C045E32005D3734 /* DrawView.m in Sources */,
 				77880CB91BCBA34A00824296 /* XDateUtil.m in Sources */,
 				77B2593F1B40EFA300CBE874 /* XMix.xcdatamodeld in Sources */,
 				77B259711B40F29000CBE874 /* CLLRefreshHeadView.m in Sources */,
 				77ACF8B11BB2C0070025FF3F /* TLWebApiVerHelper.m in Sources */,
 				77D81B6F1C195CF000DAA06D /* Student.m in Sources */,
+				776B84631C243F90003B5958 /* PeriscopeViewController.m in Sources */,
 				77ACF8AA1BB2C0070025FF3F /* TLDandelionVerHelper.m in Sources */,
 				77880CAC1BCBA2CD00824296 /* MovieViewController.m in Sources */,
 				777525B91B9C2FBD00B4153D /* GCDViewController.m in Sources */,
+				77BBD20A1C2CE6E1009ABADD /* Fox.m in Sources */,
 				77ACF8AD1BB2C0070025FF3F /* TLMutableURLRequest.m in Sources */,
 				77880CB61BCBA32800824296 /* ViewController.m in Sources */,
 				77D81B6C1C19565D00DAA06D /* Person.m in Sources */,
@@ -653,6 +850,7 @@
 				77719D641BD762030039FAA3 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				776FCB1F1BE9D7F800319861 /* TopBannerView.m in Sources */,
 				77ACF8AB1BB2C0070025FF3F /* TLFirVersionHelper.m in Sources */,
+				774907DC1C1AB27C0024F304 /* TLMKWebview.m in Sources */,
 				77880CA61BCBA29A00824296 /* BackButton.m in Sources */,
 				77880CB51BCBA32800824296 /* AppDelegate.m in Sources */,
 			);
@@ -669,6 +867,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		77959AB01C217D2A00B5DC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77959AA21C217D2A00B5DC03 /* TodayExtension */;
+			targetProxy = 77959AAF1C217D2A00B5DC03 /* PBXContainerItemProxy */;
+		};
 		77B259511B40EFA300CBE874 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77B259321B40EFA300CBE874 /* XMix */;
@@ -677,6 +880,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		77959AAB1C217D2A00B5DC03 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77959AAC1C217D2A00B5DC03 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		77B259431B40EFA300CBE874 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -696,6 +907,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		77959AB21C217D2A00B5DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = D.XMix.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77959AB31C217D2A00B5DC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = D.XMix.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		77B259571B40EFA300CBE874 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -778,6 +1015,7 @@
 		};
 		77B2595A1B40EFA300CBE874 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97D9BCB4D3978CF0C0A5D07 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -802,6 +1040,7 @@
 		};
 		77B2595B1B40EFA300CBE874 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC5AF848AB1E94A77F2D50D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -861,6 +1100,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77959AB41C217D2A00B5DC03 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77959AB21C217D2A00B5DC03 /* Debug */,
+				77959AB31C217D2A00B5DC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		77B2592E1B40EFA300CBE874 /* Build configuration list for PBXProject "XMix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

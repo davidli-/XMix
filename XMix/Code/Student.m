@@ -49,4 +49,8 @@ TLObjectCoderDecoder()
     return copy;
 }
 
+-(void)testMethod
+{
+    TraceS(@"+++++This is a studend!");
+}
 @end

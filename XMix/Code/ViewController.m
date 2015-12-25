@@ -12,11 +12,17 @@
 #import "TLVersionHelper.h"
 #import "OauthViewController.h"
 #import "MainCollectionViewController.h"
+#import "WKWebviewController.h"
+
 #import "Student.h"
+#import "Fox.h"
+#import "PeriscopeViewController.h"
 
 CGFloat const kHeightOfTopMargin    =  64;
 CGFloat const kHeightOfTopOffset    =  60;
 
+
+typedef void (^XMixBlock)(id data);
 
 @interface ViewController ()
 <
@@ -88,21 +94,21 @@ UIViewControllerPreviewingDelegate
     }else if (2 == indexPath.row){
         cell.textLabel.text = @"app跳转";
     }else if (3 == indexPath.row){
-        cell.textLabel.text = @"查询算法";
-    }else if (4 == indexPath.row){
-        cell.textLabel.text = @"冒泡排序";
-    }else if (5 == indexPath.row){
         cell.textLabel.text = @"检测版本号";
-    }else if (6 == indexPath.row){
+    }else if (4 == indexPath.row){
         cell.textLabel.text = @"Facebook Twitter";
-    }else if (7 == indexPath.row){
+    }else if (5 == indexPath.row){
         cell.textLabel.text = @"Window";
-    }else if (8 == indexPath.row){
+    }else if (6 == indexPath.row){
         cell.textLabel.text = @"序列化/反序列化";
-    }else if (9 == indexPath.row){
+    }else if (7 == indexPath.row){
         cell.textLabel.text = @"3D Touch检测";
-    }else if (10 == indexPath.row){
+    }else if (8 == indexPath.row){
         cell.textLabel.text = @"动态添加Quick Action";
+    }else if (9 == indexPath.row){
+        cell.textLabel.text = @"Persiscope";
+    }else if (10 == indexPath.row){
+        cell.textLabel.text = @"Method";
     }
     return cell;
 }
@@ -120,20 +126,27 @@ UIViewControllerPreviewingDelegate
         [self.navigationController pushViewController:viewcontroller animated:YES];
     }else if (2 == indexPath.row)
     {
-        NSString *urlStr = [NSString stringWithFormat:@"taole734c433198fd6b30://sourcescheme=%@&sourceapp=%@&sourceappname=%@&roomType=%@&pic=%@&version=15&optType=1&account=30000080",@"XMix",@"D.XMix",@"XMix",@"17",@"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/img/logo_white_ee663702.png"];
-        urlStr = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSMutableDictionary *mDic = [NSMutableDictionary dictionary];
+        mDic[@"sourcescheme"] = @"XMix";
+        mDic[@"sourceapp"]    = @"D.XMix";
+        mDic[@"sourceappname"]= @"XMix";
+        mDic[@"pic"]          = @"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/img/logo_white_ee663702.png";
+        mDic[@"roomType"]     = @(17);
+        mDic[@"version"]      = @(21);
+        mDic[@"optType"]      = @(1);
+        mDic[@"account"]      = @(30000081);
 
-        NSURL *url = [NSURL URLWithString:urlStr];
+        NSError *error    = nil;
+        NSData *strData   = [NSJSONSerialization dataWithJSONObject:mDic options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonStr = [[NSString alloc] initWithData:strData encoding:NSUTF8StringEncoding];
+        NSString *urlStr  = [jsonStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *finalStr= [NSString stringWithFormat:@"taole734c433198fd6b30://%@",urlStr];
+
+        NSURL *url = [NSURL URLWithString:finalStr];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
     }else if (3 == indexPath.row)
-    {
-        [self search];
-    }else if (4 == indexPath.row)
-    {
-        [self sort];
-    }else if (5 == indexPath.row)
     {
         TLVerRequestEntity *verEntity = [TLVerRequestEntity new];
         verEntity.target = VERSION_TARGET_DANDELION;
@@ -143,11 +156,11 @@ UIViewControllerPreviewingDelegate
         
         [self.helper httpReqVersionWithEntity:verEntity delegate:self];
         
-    }else if (6 == indexPath.row){
+    }else if (4 == indexPath.row){
         OauthViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"oauthViewController"];
         [self.navigationController pushViewController:viewController animated:YES];
 
-    }else if (7 == indexPath.row){
+    }else if (5 == indexPath.row){
         UIWindow *window = [[UIWindow alloc] initWithFrame:self.view.window.frame];
         window.windowLevel = UIWindowLevelStatusBar;
         window.backgroundColor = RGBACOLOR(255, 0, 0, 0.5);
@@ -157,7 +170,7 @@ UIViewControllerPreviewingDelegate
         //timer持有window对象 此window会显示出来 否则即使makeKeyAndVisible也看不到
         [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onReleaseWindow:) userInfo:window repeats:NO];
 
-    }else if (8 == indexPath.row){
+    }else if (6 == indexPath.row){
 
         NSData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"xxx"];
         Student *student1 = [NSKeyedUnarchiver unarchiveObjectWithData:data];
@@ -168,7 +181,7 @@ UIViewControllerPreviewingDelegate
         student.age = 25;
         student.sex = ONE;
         student.married = NO;
-        student._className = @"1年1班";
+        student.className = @"1年1班";
         student.classNumber = 5;
         student.niceClass = YES;
 
@@ -177,7 +190,7 @@ UIViewControllerPreviewingDelegate
         Student *copyStudent = [student copy];
         TraceS(@"++++++%@",copyStudent);
 
-    }else if (9 == indexPath.row){
+    }else if (7 == indexPath.row){
         NSString *message = @"Sorry,你的手机不支持3D Touch！";
         NSString *version = [[UIDevice currentDevice] systemVersion];
         if (9.0 <= [version doubleValue]) {
@@ -191,7 +204,7 @@ UIViewControllerPreviewingDelegate
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-    }else if (10 == indexPath.row){
+    }else if (8 == indexPath.row){
 
         NSString *version = [[UIDevice currentDevice] systemVersion];
         if (9.0 > [version doubleValue]) {
@@ -204,6 +217,12 @@ UIViewControllerPreviewingDelegate
         UIApplicationShortcutIcon *shareIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
         UIApplicationShortcutItem *shareItem = [[UIApplicationShortcutItem alloc] initWithType:@"Four" localizedTitle:@"分享菌" localizedSubtitle:@"分享 让你更快乐！" icon:shareIcon userInfo:nil];
         application.shortcutItems = @[cameraItem,shareItem];
+    }else if (9 == indexPath.row){
+        PeriscopeViewController *viewControl = [self.storyboard instantiateViewControllerWithIdentifier:@"Periscope"];
+        [self.navigationController pushViewController:viewControl animated:YES];
+    }else if (10 == indexPath.row){
+        id fox = [[Fox alloc] init];
+        [fox performSelector:@selector(testMethod) withObject:nil afterDelay:NONE];
     }
 }
 
@@ -335,6 +354,23 @@ UIViewControllerPreviewingDelegate
             [self registerForPreviewingWithDelegate:self sourceView:self.view];
         }
     }
+
+    //block
+    BOOL (^block)(NSInteger,NSInteger) = ^(NSInteger index,NSInteger index2){
+        return YES;
+    };
+    block(ONE,ONE);
+
+    [self textBlock:^(id data) {
+        TraceS(@"++++result:%@",data);
+    }];
 }
 
+
+-(void)textBlock:(XMixBlock)block
+{
+    if (ONE == ONE) {
+        block(@(YES));
+    }
+}
 @end

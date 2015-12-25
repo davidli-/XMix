@@ -1,13 +1,13 @@
 //
-//  TLObjectCopy.h
+//  Fox.h
 //  XMix
 //
-//  Created by davidli on 15/12/10.
+//  Created by davidli on 15/12/25.
 //  Copyright © 2015年 X. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface TLObjectCopy : NSObject
+@interface Fox : NSObject
 
 @end
