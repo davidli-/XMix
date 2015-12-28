@@ -13,6 +13,7 @@
 		776822B81BD5E59700654080 /* LocationMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776822B71BD5E59700654080 /* LocationMainController.m */; };
 		776822BC1BD5EA9300654080 /* OthersMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776822BB1BD5EA9300654080 /* OthersMainController.m */; };
 		776B84631C243F90003B5958 /* PeriscopeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B84621C243F90003B5958 /* PeriscopeViewController.m */; };
+		776FB10C1C311655000767B2 /* XSpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FB10B1C311654000767B2 /* XSpeechController.m */; };
 		776FCB1C1BE9D59900319861 /* TopBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776FCB1B1BE9D59900319861 /* TopBannerView.xib */; };
 		776FCB1F1BE9D7F800319861 /* TopBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FCB1E1BE9D7F800319861 /* TopBannerView.m */; };
 		77703F881BF09C9D00DAF79B /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 77703F871BF09C9D00DAF79B /* UINavigationBar+Awesome.m */; };
@@ -122,6 +123,8 @@
 		776822BB1BD5EA9300654080 /* OthersMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OthersMainController.m; path = Code/OthersMainController.m; sourceTree = "<group>"; };
 		776B84611C243F90003B5958 /* PeriscopeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeriscopeViewController.h; path = Code/PeriscopeViewController.h; sourceTree = "<group>"; };
 		776B84621C243F90003B5958 /* PeriscopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeriscopeViewController.m; path = Code/PeriscopeViewController.m; sourceTree = "<group>"; };
+		776FB10A1C311654000767B2 /* XSpeechController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSpeechController.h; path = Code/XSpeechController.h; sourceTree = "<group>"; };
+		776FB10B1C311654000767B2 /* XSpeechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSpeechController.m; path = Code/XSpeechController.m; sourceTree = "<group>"; };
 		776FCB1B1BE9D59900319861 /* TopBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopBannerView.xib; path = Code/TopBannerView.xib; sourceTree = "<group>"; };
 		776FCB1D1BE9D7F800319861 /* TopBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopBannerView.h; path = Code/TopBannerView.h; sourceTree = "<group>"; };
 		776FCB1E1BE9D7F800319861 /* TopBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopBannerView.m; path = Code/TopBannerView.m; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				774907D31C1A9C8E0024F304 /* WKWebviewController.m */,
 				776B84611C243F90003B5958 /* PeriscopeViewController.h */,
 				776B84621C243F90003B5958 /* PeriscopeViewController.m */,
+				776FB10A1C311654000767B2 /* XSpeechController.h */,
+				776FB10B1C311654000767B2 /* XSpeechController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -830,6 +835,7 @@
 				77B259701B40F29000CBE874 /* CLLRefreshHeadController.m in Sources */,
 				77968B5C1BCE291800AA29C2 /* OauthViewController.m in Sources */,
 				77BADECF1BD5F9C8002B9DD5 /* MainCollectionViewController.m in Sources */,
+				776FB10C1C311655000767B2 /* XSpeechController.m in Sources */,
 				77734A261C045E32005D3734 /* DrawView.m in Sources */,
 				77880CB91BCBA34A00824296 /* XDateUtil.m in Sources */,
 				77B2593F1B40EFA300CBE874 /* XMix.xcdatamodeld in Sources */,
