@@ -521,6 +521,63 @@
             </objects>
             <point key="canvasLocation" x="1499" y="1763"/>
         </scene>
+        <!--Speech Controller-->
+        <scene sceneID="AP6-fW-9Zh">
+            <objects>
+                <viewController storyboardIdentifier="XSpeech" id="14w-cB-gfj" customClass="XSpeechController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dyo-OA-ghE"/>
+                        <viewControllerLayoutGuide type="bottom" id="e7f-Kw-2yl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cbw-m1-mN0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKH-ku-tGs">
+                                <rect key="frame" x="0.0" y="28" width="193.5" height="34"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.29803921570000003" blue="0.2666666667" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHandleStart:" destination="14w-cB-gfj" eventType="touchUpInside" id="w1z-ZU-1Cx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhC-I2-J32">
+                                <rect key="frame" x="406.5" y="28" width="193.5" height="34"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.29803921570000003" blue="0.2666666667" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="恢复"/>
+                                <connections>
+                                    <action selector="onHandleResume:" destination="14w-cB-gfj" eventType="touchUpInside" id="qro-EQ-0pd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-8f-9j0">
+                                <rect key="frame" x="203.5" y="28" width="193" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="onHandlePause:" destination="14w-cB-gfj" eventType="touchUpInside" id="uqY-28-mgG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aKH-ku-tGs" firstAttribute="leading" secondItem="cbw-m1-mN0" secondAttribute="leadingMargin" constant="-20" id="NJO-aF-gWR"/>
+                            <constraint firstItem="PhC-I2-J32" firstAttribute="leading" secondItem="Hgf-8f-9j0" secondAttribute="trailing" constant="10" id="UWW-MP-HOe"/>
+                            <constraint firstItem="Hgf-8f-9j0" firstAttribute="leading" secondItem="aKH-ku-tGs" secondAttribute="trailing" constant="10" id="Wwm-iK-vXZ"/>
+                            <constraint firstItem="PhC-I2-J32" firstAttribute="width" secondItem="aKH-ku-tGs" secondAttribute="width" id="Z62-rb-kU1"/>
+                            <constraint firstItem="aKH-ku-tGs" firstAttribute="top" secondItem="Dyo-OA-ghE" secondAttribute="bottom" constant="8" id="azf-Er-jx1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PhC-I2-J32" secondAttribute="trailing" constant="-20" id="dEd-Y4-xd2"/>
+                            <constraint firstItem="Hgf-8f-9j0" firstAttribute="top" secondItem="aKH-ku-tGs" secondAttribute="top" id="nRe-ET-W8k"/>
+                            <constraint firstItem="Hgf-8f-9j0" firstAttribute="width" secondItem="aKH-ku-tGs" secondAttribute="width" id="r0T-GF-4jc"/>
+                            <constraint firstItem="PhC-I2-J32" firstAttribute="top" secondItem="aKH-ku-tGs" secondAttribute="top" id="w0I-Ee-MWS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEc-j7-Xh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2883" y="1764"/>
+        </scene>
         <!--Periscope View Controller-->
         <scene sceneID="v9e-w6-zgb">
             <objects>

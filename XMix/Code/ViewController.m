@@ -17,6 +17,7 @@
 #import "Student.h"
 #import "Fox.h"
 #import "PeriscopeViewController.h"
+#import "XSpeechController.h"
 
 CGFloat const kHeightOfTopMargin    =  64;
 CGFloat const kHeightOfTopOffset    =  60;
@@ -36,7 +37,6 @@ UIViewControllerPreviewingDelegate
 @property (nonatomic, strong) TLVersionHelper *helper;
 @property (weak, nonatomic) IBOutlet UITableView *mTableview;
 @property (nonatomic, strong) NSMutableArray *mDatasource;
-
 @property (nonatomic, copy) NSString *urlStr;
 
 @end
@@ -109,6 +109,8 @@ UIViewControllerPreviewingDelegate
         cell.textLabel.text = @"Persiscope";
     }else if (10 == indexPath.row){
         cell.textLabel.text = @"Method";
+    }else if (11 == indexPath.row){
+        cell.textLabel.text = @"翻译官";
     }
     return cell;
 }
@@ -223,6 +225,9 @@ UIViewControllerPreviewingDelegate
     }else if (10 == indexPath.row){
         id fox = [[Fox alloc] init];
         [fox performSelector:@selector(testMethod) withObject:nil afterDelay:NONE];
+    }else if (11 == indexPath.row){
+        XSpeechController *speech = [self.storyboard instantiateViewControllerWithIdentifier:@"XSpeech"];
+        [self.navigationController pushViewController:speech animated:YES];
     }
 }
 
@@ -343,7 +348,7 @@ UIViewControllerPreviewingDelegate
     self.mTableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(NONE, NONE, CGRectGetWidth(self.view.frame), NONE)];
     
     _mDatasource = [NSMutableArray array];
-    for (NSInteger i = NONE; i < 11; i++) {
+    for (NSInteger i = NONE; i < 12; i++) {
         [_mDatasource addObject:@""];
     }
 
