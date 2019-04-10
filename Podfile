@@ -1,2 +1,7 @@
 platform:ios,'8.0'
-pod'AFNetworking','~>3.0.4’
+
+target 'XMix' do
+
+pod 'AFNetworking', '~> 3.2.1'
+
+end

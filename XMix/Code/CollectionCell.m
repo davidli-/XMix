@@ -11,7 +11,7 @@
 @implementation CollectionCell
 
 - (void)awakeFromNib {
-
+    [super awakeFromNib];
 }
 
 
